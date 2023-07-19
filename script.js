@@ -17,17 +17,21 @@ var c = 0;//contador de combo
 var p = 0;//contador de pontuação
 let barra = 0;//contador de barra no final
 
-window.alert('Para iniciar o jogo pressione qualquer tecla.');
+window.alert('Pressione qualquer tecla para jogar!');
 
 //ativar a musica
 const audio = new Audio('teste.mp3');
+setTimeout(() => {
+    
+
 document.addEventListener("keydown", function pause() {
     audio.play();
-    audio.loop();
     t1.classList.add('movet1');
     t2.classList.add('movet2');
     t3.classList.add('movet3');
     t4.classList.add('movet4');
+
+}); //fim do setTimeout
 
 //evento para quando presionar uma tecla
 document.addEventListener("keydown", function(event) {
@@ -127,7 +131,9 @@ setInterval(()=>{
     cont.innerHTML = c;
 },25)
  
-})
+})//fim do evento presskey
+
+
 
 
 
