@@ -17,6 +17,18 @@ var c = 0;//contador de combo
 var p = 0;//contador de pontuação
 let barra = 0;//contador de barra no final
 
+window.alert('Para iniciar o jogo pressione qualquer tecla.');
+
+//ativar a musica
+const audio = new Audio('teste.mp3');
+document.addEventListener("keydown", function pause() {
+    audio.play();
+    audio.loop();
+    t1.classList.add('movet1');
+    t2.classList.add('movet2');
+    t3.classList.add('movet3');
+    t4.classList.add('movet4');
+
 //evento para quando presionar uma tecla
 document.addEventListener("keydown", function(event) {
     press(event.key)
@@ -110,17 +122,13 @@ setInterval(()=>{
        }
     }
    
-    
     //atualiza o contador da tela a cada 1 segundo
     const cont = document.querySelector('#cont');
     cont.innerHTML = c;
 },25)
-
-
-const audio = new Audio('teste.mp3');
-document.addEventListener("keydown", function song() {
-    
+ 
 })
+
 
 
 //função para clicar com o mouse, em standby no momento!

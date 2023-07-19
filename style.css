@@ -26,29 +26,39 @@ body{
     background-color: rgb(114, 114, 114);
     box-shadow: 3px 3px 3px 3px rgb(22, 22, 22);
 }
+.movet1{
+    animation: descer 3s infinite linear;
+}
+.movet2{
+    animation: descer 2s infinite linear;
+}
+.movet3{
+    animation: descer 3s infinite linear;
+}
+.movet4{
+    animation: descer 4s infinite linear;
+}
 #t1{
     position: absolute;
-    width: 175px;
-    animation: descer 3s infinite linear;
+    width: 175px; 
 }
 #t2{
     position: absolute;
     width: 175px;
     margin-left: 175px;
     background-position: 100%;
-    animation: descer 2s infinite linear;
 }   
 #t3{
     position: absolute;
     width: 175px;
     margin-left: 350px;
-    animation: descer 3s infinite linear;
+    
 }
 #t4{
     position: absolute;
     width: 175px;
     margin-left: 525px;
-    animation: descer 4s infinite linear;
+
 }
 #f{   
     margin-left: 175px;
