@@ -1,0 +1,15 @@
+*{
+    text-align: center;
+    margin: auto;
+    margin-top: 5%; 
+}
+p{
+    border-radius: 10%;
+    width: 400px;
+    height: 45px;
+    box-shadow: 3px 3px 3px 3px;
+}
+p:hover{
+    background-color: black;
+    color: white;
+}
