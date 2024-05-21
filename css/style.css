@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(45deg, orange, red, blue, green);
+    background-size: 300% 300%;
+    animation: color 7s linear infinite;
+}
+@keyframes color {
+    0%{
+        background-position: 0% ;
+    }
+    50%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0%;
+    }
+}
+#tela{
+    width: 700px;
+    height: 900px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(114, 114, 114);
+    box-shadow: 3px 3px 3px 3px rgb(22, 22, 22);
+}
+.movet1{
+    animation: descer 3s infinite linear;
+}
+.movet2{
+    animation: descer 2s infinite linear;
+}
+.movet3{
+    animation: descer 3s infinite linear;
+}
+.movet4{
+    animation: descer 4s infinite linear;
+}
+#t1{
+    position: absolute;
+    width: 175px; 
+}
+#t2{
+    position: absolute;
+    width: 175px;
+    margin-left: 175px;
+    background-position: 100%;
+}   
+#t3{
+    position: absolute;
+    width: 175px;
+    margin-left: 350px;
+    
+}
+#t4{
+    position: absolute;
+    width: 175px;
+    margin-left: 525px;
+
+}
+#f{   
+    margin-left: 175px;
+    
+}
+#j{
+    margin-left: 350px;
+    
+}
+#k{
+    margin-left: 525px;
+    
+}
+button{
+    position:absolute;
+    width: 175px;
+    height: 60px;
+    font-size:large;
+    margin-bottom:100px;
+    bottom: 5px;
+}
+@keyframes descer {
+    from {
+        top: -100px;
+    }
+
+    to {
+        top: 100%;
+    }
+}
+h1{
+    margin-top: auto;
+    text-align: center;
+    color: #dadada;
+}
+.marcador{
+    margin-top: 20%;
+    
+}
