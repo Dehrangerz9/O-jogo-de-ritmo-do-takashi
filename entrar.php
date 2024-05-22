@@ -5,16 +5,20 @@
 
     include "conexao.php";
 
-    $sql_nome = "SELECT email FROM usuario WHERE nome_user = '$nome' AND senha = '$senha'";
+    $sql = "SELECT email FROM usuario WHERE nome_user = '$nome' AND senha = '$senha'";
 
-    $dados_nome = mysqli_query($con, $sql_nome);
- 
-    while ($linha = mysqli_fetch_assoc($dados_nome)) {
-        foreach($linha as $key => $value){
-            echo "$key: $value <br>";
-            $info = &$value;
-            echo "$info";
+    $dados = mysqli_query($con, $sql);
+
+    if (mysqli_num_rows($dados)>0) {
+        while ($linha = mysqli_fetch_assoc($dados)) {
+            foreach($linha as $key => $value){
+                $info = &$value;
+                echo "login realizado com sucesso";
+            }
         }
+    }else{
+        echo "email ou senha invalido";
     }
+ 
 
 ?>
