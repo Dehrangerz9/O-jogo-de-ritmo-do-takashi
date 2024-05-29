@@ -5,7 +5,7 @@
 
     include "conexao.php";
 
-    $sql = "SELECT email FROM usuario WHERE nome_user = '$nome' AND senha = '$senha'";
+    $sql = "SELECT * FROM usuario WHERE nome_user = '$nome' AND senha = '$senha'";
 
     $dados = mysqli_query($con, $sql);
 

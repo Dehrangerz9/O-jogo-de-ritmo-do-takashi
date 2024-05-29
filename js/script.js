@@ -1,3 +1,9 @@
+
+
+console.log("POHA");
+
+
+
 //lista de variaveis:
 
 //variaveis das barras 
@@ -13,6 +19,7 @@ let j = document.querySelector('#j');
 let k = document.querySelector('#k');
 
 //variaveis de pontuação
+let vida = 0;//contador de quantidade de vez a barra passou e o usuario nao apertou
 var c = 0;//contador de combo
 var p = 0;//contador de pontuação
 let barra = 0;//contador de barra no final
@@ -123,12 +130,18 @@ setInterval(()=>{
        if (barra>c) {
         c=0;
         barra=0;
+        vida++;
+        
        }
     }
+
+    //verificador da vida
+   
    
     //atualiza o contador da tela a cada 1 segundo
     const cont = document.querySelector('#cont');
     cont.innerHTML = c;
+    console.log("teste");
 },25)
  
 })//fim do evento presskey

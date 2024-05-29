@@ -20,6 +20,9 @@ body{
     background-size: 300% 300%;
     animation: color 7s linear infinite;
 }
+
+
+
 @keyframes color {
     0%{
         background-position: 0% ;

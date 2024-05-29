@@ -2,7 +2,7 @@
     $server = "localhost";
     $user = "root";
     $pass = "";
-    $bd = "teste";
+    $bd = "jogo";
     if($con = mysqli_connect($server, $user, $pass, $bd)) {
         //echo "conectado";
     } else{

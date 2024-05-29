@@ -24,6 +24,8 @@
             <img src="../img/traco_preto.png" id="t2">
             <img src="../img/traco_preto.png" id="t3">
             <img src="../img/traco_preto.png" id="t4">
+            <h1>Maior Pontuação:</h1>
+            <h1>0</h1>
         </div>
     </div>
 
