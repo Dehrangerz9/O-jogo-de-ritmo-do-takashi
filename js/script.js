@@ -131,14 +131,15 @@ setInterval(()=>{
 
     //verificador da vida
    if (vida>10) {
-    window.alert("Vc perdeu")
-    window.location.href="";
+    window.alert("Vc perdeu");
+    vida = 0;
+    console.log(vida);
+    window.location.href="../php/index.php";
    }
    
     //atualiza o contador da tela a cada 1 segundo
     const cont = document.querySelector('#cont');
     cont.innerHTML = c;
-    console.log("teste");
 },25)
  
 })//fim do evento presskey
