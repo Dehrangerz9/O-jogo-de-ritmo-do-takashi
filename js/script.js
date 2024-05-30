@@ -1,9 +1,3 @@
-
-
-console.log("POHA");
-
-
-
 //lista de variaveis:
 
 //variaveis das barras 
@@ -136,7 +130,10 @@ setInterval(()=>{
     }
 
     //verificador da vida
-   
+   if (vida>10) {
+    window.alert("Vc perdeu")
+    window.location.href="";
+   }
    
     //atualiza o contador da tela a cada 1 segundo
     const cont = document.querySelector('#cont');
