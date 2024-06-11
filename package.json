@@ -1,0 +1,24 @@
+{
+  "name": "rhythm-game",
+  "version": "1.0.0",
+  "description": "A simple rhythm game project",
+  "main": "server\\server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dehrangerz9/O-jogo-de-ritmo-do-takashi.git"
+  },
+  "author": "Yume Fernandes, Carlos Takashi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dehrangerz9/O-jogo-de-ritmo-do-takashi/issues"
+  },
+  "homepage": "https://github.com/Dehrangerz9/O-jogo-de-ritmo-do-takashi#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.3"
+  }
+}
