@@ -4,7 +4,7 @@
     margin-top: 2%;
 }
 p{
-    border-radius: 20%;
+    border-radius: 25px;
     width: 400px;
     height: 45px;
     box-shadow: 3px 3px 3px 3px;
@@ -16,8 +16,8 @@ p:hover{
     color: white;
 }
 body{
-    background: linear-gradient(45deg, orange, red, blue, green);
-    background-size: 300% 300%;
+    background: linear-gradient(30deg, orange, red, blue, green);
+    background-size: cover;
     animation: color 7s linear infinite;
 }
 
