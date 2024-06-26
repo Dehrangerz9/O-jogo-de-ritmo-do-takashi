@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="https://kit.fontawesome.com/dc7239166f.js" crossorigin="anonymous"></script>
+    <title><%= title %></title>
+</head>
+<body>
+    <header>
+        <div class="usuario">
+            <p><% if (userName) {%> <%=userName%> <%} else {%>Fazer Login <% } %></p>
+        </div>
+        <div class="level">
+            <p><% if (userLevel) {%> Level: <%=userLevel%> <%} else {%>Fazer Login<% } %></p>
+        </div>
+        <div class="configurações">
+            <i class="fa-solid fa-gear fa-2xl" style="color: #f2f2f2"></i>
+        </div>
+    </header>
