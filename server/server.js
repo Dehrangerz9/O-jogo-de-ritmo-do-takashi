@@ -24,6 +24,10 @@ app.get("/", (req, res) => {
   res.render('index', { title: 'Home', userName: 'Dehrangerz9',userLevel: 10,musicaNome: null }); // Renderizando o template 'index.ejs' com um título
 });
 
+app.get("/jogo", (req, res) => {
+  res.render('jogo', { title: 'Home', userName: 'Dehrangerz9',userLevel: 10,musicaNome: null }); // Renderizando o template 'index.ejs' com um título
+});
+
 app.get("/dados", async (req, res) => {
   try {
     const client = await pool.connect();
